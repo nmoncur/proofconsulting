@@ -1,0 +1,57 @@
+/*
+ Theme Name: Twenty Sixteen Child
+ Description: Child theme for Proof Consulting built on WordPress' Twenty Sixteen theme
+ Author: Simply Driven Media
+ Template: twentysixteen
+ Version: 1.0.0
+ Text Domain: twentysixteen-child
+*/
+body, .site {
+  background-color: #E5E5E5;
+  color: #4C4C4C;
+}
+.site, .row {
+  margin: 0;
+}
+.site-header {
+  padding: 0;
+}
+.site-content {
+  padding: 0;
+}
+.site-footer .site-title::after {
+  content: "";
+}
+.site-inner {
+  max-width: none;
+}
+.bio {
+  background-color: #4c4c4c;
+  color: #eee;
+}
+.visitor h1 {
+  font-variant: small-caps;
+  font-weight: bold;
+  padding: 0 10px;
+}
+.visitor .row .container {
+  padding: 30px 0;
+}
+.visitor .row .container h3 {
+  margin: 5px 0;
+}
+.projects {
+  background-color: #737373;
+}
+.map {
+  background-color: #8c8c8c;
+}
+.specialties {
+  background-color: #999999;
+}
+.testimonial {
+  background-color: #d9d9d9;
+}
+.email {
+  background-color: #eee;
+}
