@@ -10,7 +10,7 @@ do_action('proof_email_list_post');
 <div class="visitor">
 
   <?php
-    $pages = tsc_get_pages(6);
+    $pages = tsc_get_pages(visitor);
     foreach($pages as $page) :
   ?>
 
