@@ -7,7 +7,7 @@
  Text Domain: twentysixteen-child
 */
 body, .site {
-  background-color: #E5E5E5;
+  background-color: #fff;
   color: #4C4C4C;
 }
 .site, .row {
@@ -25,33 +25,33 @@ body, .site {
 .site-inner {
   max-width: none;
 }
-.bio {
-  background-color: #4c4c4c;
-  color: #eee;
-}
-.visitor h1 {
+header h1 {
   font-variant: small-caps;
   font-weight: bold;
   padding: 0 10px;
 }
-.visitor .row .container {
+.visitor .row .content {
   padding: 30px 0;
 }
-.visitor .row .container h3 {
+.visitor .row .content h3 {
   margin: 5px 0;
+}
+.meet-rick-carter {
+  background-color: #4c4c4c;
+  color: #eee;
 }
 .projects {
   background-color: #737373;
 }
-.map {
+.previous-work {
   background-color: #8c8c8c;
 }
 .specialties {
   background-color: #999999;
 }
-.testimonial {
+.what-others-have-said {
   background-color: #d9d9d9;
 }
-.email {
+.how-to-reach-me {
   background-color: #eee;
 }
