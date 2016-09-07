@@ -1,34 +1,38 @@
 <?php
 /**
- * The base configurations of the WordPress.
+ * The base configuration for WordPress
  *
- * This file has the following configurations: MySQL settings, Table Prefix,
- * Secret Keys, WordPress Language, and ABSPATH. You can find more information
- * by visiting {@link http://codex.wordpress.org/Editing_wp-config.php Editing
- * wp-config.php} Codex page. You can get the MySQL settings from your web host.
+ * The wp-config.php creation script uses this file during the
+ * installation. You don't have to use the web site, you can
+ * copy this file to "wp-config.php" and fill in the values.
  *
- * This file is used by the wp-config.php creation script during the
- * installation. You don't have to use the web site, you can just copy this file
- * to "wp-config.php" and fill in the values.
+ * This file contains the following configurations:
+ *
+ * * MySQL settings
+ * * Secret keys
+ * * Database table prefix
+ * * ABSPATH
+ *
+ * @link https://codex.wordpress.org/Editing_wp-config.php
  *
  * @package WordPress
  */
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'proofconsulting_com');
+define('DB_NAME', 'sdm_proof');
 
 /** MySQL database username */
-define('DB_USER', 'proofconsultingc');
+define('DB_USER', 'root');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'CzTi8vEe');
+define('DB_PASSWORD', 'root');
 
 /** MySQL hostname */
-define('DB_HOST', 'mysql.proofconsulting.com');
+define('DB_HOST', 'localhost');
 
 /** Database Charset to use in creating database tables. */
-define('DB_CHARSET', 'utf8');
+define('DB_CHARSET', 'utf8mb4');
 
 /** The Database Collate type. Don't change this if in doubt. */
 define('DB_COLLATE', '');
@@ -42,40 +46,24 @@ define('DB_COLLATE', '');
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         '&ElimQyq;fG_3F:zQ;!zm$aXFle/#Jqw6+j0A*lLdXFb^L7;*KXK^7NGdr)w|fLM');
-define('SECURE_AUTH_KEY',  '38Lhzh80k&CXNU9O1iy(PX*O*m&q^u*)!Q)B^cL+M20?T^T_NAScw%$eP*gd:IZj');
-define('LOGGED_IN_KEY',    '@_zr"(G*p~LVp?N`codN84E;Q3d3IbC"UVKIlzUEw"t@Hypvwo)S$U~LMyo+FSH/');
-define('NONCE_KEY',        'Nu+0P2w(RA*bFyP|?cE7t%JO!%GEC2f_4o%ZMQD5%Kf(mNtqEo5fTdKnvm%mw~!n');
-define('AUTH_SALT',        '/NNn2FZIe4vsnCZAQ!M80np$d#Nv23$cAU#bPqop+bZsWMd91cat!Q)?t:7(7R8|');
-define('SECURE_AUTH_SALT', 'DFCuIhB_ea|iLvd;ov&49CuQEY?CmEPL08J^)i"sJu:b(pC@oYiik%_ztEMJzoj$');
-define('LOGGED_IN_SALT',   'L#vR$NcTM)0e*p5mE*E8x%*W6oN$:EL^ye"5S~Wtgc"3a`Xsp80+ITG:?%nkV1(G');
-define('NONCE_SALT',       'r8$bne4XBtY0a|vSbGET/tLhZ:hUB24Tfc+4SPGVCrHe&dTNVx@J#c%fZdI;clos');
+define('AUTH_KEY',         'KH#j*,5/6U8*x>9!k/|Y(1EgZZ1gitN:dyWz^nq0`qUlk[7k?Yf$UzR)MUJ4 gaE');
+define('SECURE_AUTH_KEY',  'Q_Et?RZ$B(5%$iRr`l:mk,2#LlPx[eEXKhYcf~3In;qY9Xk<td{T~aEr+8xZ~2X2');
+define('LOGGED_IN_KEY',    'Tg$1CfMHV$??iWz;Fbba8?6e@z 06` uvo?!fNi9$>s#8! HMvx2LQ~dGT8DQ2yz');
+define('NONCE_KEY',        'IK=3.vXUOU2qYIQqp+mM_G*9)&33ru5~}VHWV/K,(l{xnC)VmW2aeo=&Y^`/~j|1');
+define('AUTH_SALT',        'rt^UioC#Y(IpxKSLj.-f7NooeHbY,l8)XV4`]h:b]T}|.7ejl l#(=m0Jd~z^z,O');
+define('SECURE_AUTH_SALT', '{5T$HkHtWY6M`yL~p+N^!^vv/8+2_#:EbOl&17P-B>_TS[|3:z!bW&N+IKmWp<xX');
+define('LOGGED_IN_SALT',   'bb*k(|f/=Z$Rp<iR?}Zp2T2#yN}_F;-pw`y,Vau>;wS.b[%`Me1L/6(Ejr{R Iq3');
+define('NONCE_SALT',       'X&q29W_ns-EsT`V N-$Ghs9$8bma!_Hz[8Yx)DB!B.%Mh:o.oAW{Hsb)-vkpkY!F');
 
 /**#@-*/
 
 /**
  * WordPress Database Table prefix.
  *
- * You can have multiple installations in one database if you give each a unique
- * prefix. Only numbers, letters, and underscores please!
+ * You can have multiple installations in one database if you give each
+ * a unique prefix. Only numbers, letters, and underscores please!
  */
-$table_prefix  = 'wp_hh9xvd_';
-
-/**
- * Limits total Post Revisions saved per Post/Page.
- * Change or comment this line out if you would like to increase or remove the limit.
- */
-define('WP_POST_REVISIONS',  10);
-
-/**
- * WordPress Localized Language, defaults to English.
- *
- * Change this to localize WordPress. A corresponding MO file for the chosen
- * language must be installed to wp-content/languages. For example, install
- * de_DE.mo to wp-content/languages and set WPLANG to 'de_DE' to enable German
- * language support.
- */
-define('WPLANG', '');
+$table_prefix  = 'wp_';
 
 /**
  * For developers: WordPress debugging mode.
@@ -83,6 +71,11 @@ define('WPLANG', '');
  * Change this to true to enable the display of notices during development.
  * It is strongly recommended that plugin and theme developers use WP_DEBUG
  * in their development environments.
+ *
+ * For information on other constants that can be used for debugging,
+ * visit the Codex.
+ *
+ * @link https://codex.wordpress.org/Debugging_in_WordPress
  */
 define('WP_DEBUG', false);
 
@@ -94,4 +87,3 @@ if ( !defined('ABSPATH') )
 
 /** Sets up WordPress vars and included files. */
 require_once(ABSPATH . 'wp-settings.php');
-
