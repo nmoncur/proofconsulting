@@ -50,4 +50,14 @@ function fix_input($data) {
   return $data;
 }
 
+function tsc_get_pages($id) {
+  global $wpdb;
+  $pages = $wpdb->get_results("
+    SELECT ID, post_content, post_title, post_name from wp_posts
+    WHERE post_parent = $id && post_type <> 'revision'
+    ORDER BY menu_order ASC;
+  ");
+  return $pages;
+}
+
 ?>

@@ -9,8 +9,14 @@
         <?php endif; ?>
         <?php wp_head(); ?>
 </head>
-
 <body <?php body_class(); ?>>
 <div id="page" class="site">
   <div class="site-inner">
+    <header id="masthead" class="site-header" role="banner">
+      <div class="row">
+        <div class="col-sm-5 text-center">
+          <h1>Proof Consulting</h1>
+        </div>
+      </div>
+    </header>
     <div id="content" class="site-content">
