@@ -7,14 +7,14 @@ get_header();
 ?>
 
 <div class="row">
-  <div class="col-sm-10 col-sm-offset-1">
+  <div class="col-sm-10 col-sm-offset-1 text-center">
 
-    <h1>Welcome to Proof Consulting</h1>
+    <h1>Welcome to Proof</h1>
 
     <div class="col-xs-6">
       <h2 class="col-xs-offset-1">Client Login</h2>
       <h3 class="col-xs-offset-1">
-        <button type="button" class="btn btn-default">Coming Soon!</button>
+        <div class="coming-soon">Coming Soon!</div>
       </h3>
     </div>
 

@@ -6,11 +6,16 @@
  Version: 1.0.0
  Text Domain: twentysixteen-child
 */
-body, .site {
-  background-color: #fff;
+body, {
+  background-color: transparent;
   color: #4C4C4C;
+  margin: 25px;
 }
-.site, .row {
+.site {
+  margin: 50px 25px;
+  opacity: .8;
+}
+.row {
   margin: 0;
 }
 .site-header {
@@ -44,14 +49,19 @@ header h1 {
   background-color: #737373;
 }
 .previous-work {
-  background-color: #8c8c8c;
+  background-color: #b2b2b2;
 }
 .specialties {
-  background-color: #999999;
+  background-color: #e1e1e1;
 }
 .what-others-have-said {
-  background-color: #d9d9d9;
+  background-color: #f4f4f4;
 }
 .how-to-reach-me {
-  background-color: #eee;
+  background-color: #fff;
+}
+.coming-soon {
+  font-size: 14px;
+  font-weight: 400;
+  padding: 9px 0;
 }
