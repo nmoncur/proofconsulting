@@ -44,23 +44,23 @@ header h1 {
   margin: 5px 0;
 }
 .meet-rick-carter {
-  background-color: #4c4c4c;
+  background-color: rgba(76,76,76, 0.6);
   color: #eee;
 }
 .projects {
-  background-color: #737373;
+  background-color: rgba(115, 115, 115, 0.6);;
 }
 .previous-work {
-  background-color: #b2b2b2;
+  background-color: rgba(178, 178, 178, 0.6);;
 }
 .specialties {
-  background-color: #e1e1e1;
+  background-color: rgba(225, 225, 225, 0.6);;
 }
 .what-others-have-said {
-  background-color: #f4f4f4;
+  background-color: rgba(244, 244, 244, 0.6);;
 }
 .how-to-reach-me {
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.6);
 }
 .coming-soon {
   font-size: 14px;
